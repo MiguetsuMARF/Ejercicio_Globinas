@@ -1,0 +1,8 @@
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(version = "3.19")
+BiocManager::install("msa")
+BiocManager::install("Biostrings")
+install.packages ("seqinr")
+install.packages("ape")
+install.packages("phangorn")

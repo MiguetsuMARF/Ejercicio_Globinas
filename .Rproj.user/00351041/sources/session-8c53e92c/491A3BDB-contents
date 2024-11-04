@@ -1,5 +1,29 @@
 library (ggmsa)
-library (BioStrings)
+library (Biostrings)
+library (msa)
+library(seqinr)
+library(ape)
+library(phangorn)
 
-ggmsa("Raw_Data/DivergentGlobins.fasta")
-ggmsa ("Raw_Data/")
+globinas <- readDNAStringSet("Raw_Data/DivergentGlobins.fasta")
+alineamiento_1 <- msa (globinas)
+
+pdf ("Resultados/Alineamiento_globinas.pdf")
+ggmsa(globinas)
+dev.off()
+
+Matriz_Distancias <- seqinr::dist.alignment (msaConvert (alineamiento_1,"seqinr::alignment"))
+Matriz_Distancias
+
+Arbol_nj <- ape::nj (Matriz_Distancias)
+plot (Arbol_nj)
+plot (Arbol_nj, "unrooted")
+
+Arbol_upgma <- phangorn::upgma (Matriz_Distancias)
+plot (Arbol_upgma)
+
+pdf ("Resultados/Arboles_globinas.pdf")
+plot (Arbol_nj)
+plot (Arbol_upgma)
+plot (Arbol_nj, "unrooted")
+dev.off()

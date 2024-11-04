@@ -1,26 +1,26 @@
 {
-    "id": "2B853EBC",
-    "path": "~/Rodriguez_Miguel_T2.R/Rodriguez_Miguel_T2_P5.R",
+    "id": "FD5BBC34",
+    "path": "~/BioInformaticaMARF_2024_2/Raw_Script/Ejercicios de R.R",
     "project_path": null,
     "type": "r_source",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1730755250533.0,
+    "created": 1730756622785.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 4,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "66,0",
-        "scrollLine": "52"
+        "cursorPosition": "189,42",
+        "scrollLine": "181"
     },
     "folds": "",
-    "lastKnownWriteTime": 1728104374,
+    "lastKnownWriteTime": 1727734346,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1728104374,
+    "last_content_update": 1727734346,
     "read_only": false,
     "read_only_alternatives": []
 }

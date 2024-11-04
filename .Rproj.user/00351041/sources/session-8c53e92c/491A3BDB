@@ -3,9 +3,9 @@
     "path": "~/Ejercicio_Globinas/Scripts/Alineamiento.R",
     "project_path": "Scripts/Alineamiento.R",
     "type": "r_source",
-    "hash": "3208212436",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1730755366752.0,
     "source_on_save": false,
     "relative_order": 3,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "3,0",
-        "scrollLine": "0"
+        "cursorPosition": "24,0",
+        "scrollLine": "8"
     },
     "folds": "",
-    "lastKnownWriteTime": 1730755665,
+    "lastKnownWriteTime": 1730756402,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1730755665942,
+    "last_content_update": 1730756844213,
     "read_only": false,
     "read_only_alternatives": []
 }

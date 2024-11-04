@@ -1,5 +1,11 @@
 library (ggmsa)
 library (BioStrings)
+library (msa)
+library (ape)
 
-ggmsa("Raw_Data/DivergentGlobins.fasta")
-ggmsa ("Raw_Data/")
+globinas <- readDNAStringSet("Raw_Data/DivergentGlobins.fasta")
+
+pdf ("Resultados/Alineamiento_globinas.pdf")
+ggmsa(globinas)
+dev.off()
+
