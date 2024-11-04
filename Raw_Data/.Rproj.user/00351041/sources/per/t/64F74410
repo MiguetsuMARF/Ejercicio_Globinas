@@ -1,27 +1,24 @@
 {
-    "id": "49D8E119",
+    "id": "64F74410",
     "path": "~/Ejercicio_Globinas/Scripts/Paquetes_instalados.R",
-    "project_path": "Scripts/Paquetes_instalados.R",
+    "project_path": null,
     "type": "r_source",
-    "hash": "0",
+    "hash": "2494085226",
     "contents": "",
-    "dirty": true,
-    "created": 1730755115346.0,
+    "dirty": false,
+    "created": 1730757944638.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "tempName": "Untitled1",
         "source_window_id": "",
-        "Source": "Source",
-        "cursorPosition": "9,0",
-        "scrollLine": "0"
+        "Source": "Source"
     },
     "folds": "",
     "lastKnownWriteTime": 1730756406,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1730757588494,
+    "last_content_update": 1730756406,
     "read_only": false,
     "read_only_alternatives": []
 }

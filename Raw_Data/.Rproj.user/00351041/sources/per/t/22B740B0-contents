@@ -5,7 +5,7 @@ library(seqinr)
 library(ape)
 library(phangorn)
 
-globinas <- readDNAStringSet("Raw_Data/DivergentGlobins.fasta")
+globinas <- readDNAStringSet("")
 alineamiento_1 <- msa (globinas, method = "ClustalW")
 alineamiento_2 <- msa (globinas, method = "ClustalOmega")
 

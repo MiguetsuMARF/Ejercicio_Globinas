@@ -1,27 +1,26 @@
 {
-    "id": "491A3BDB",
+    "id": "22B740B0",
     "path": "~/Ejercicio_Globinas/Scripts/Alineamiento.R",
-    "project_path": "Scripts/Alineamiento.R",
+    "project_path": null,
     "type": "r_source",
-    "hash": "4253019491",
+    "hash": "1176666417",
     "contents": "",
     "dirty": false,
-    "created": 1730755366752.0,
+    "created": 1730757947807.0,
     "source_on_save": false,
-    "relative_order": 3,
+    "relative_order": 2,
     "properties": {
-        "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "34,27",
-        "scrollLine": "19"
+        "cursorPosition": "7,32",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1730757458,
+    "lastKnownWriteTime": 1730758053,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1730757458602,
+    "last_content_update": 1730758053282,
     "read_only": false,
     "read_only_alternatives": []
 }
