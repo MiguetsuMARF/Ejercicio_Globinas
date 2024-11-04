@@ -21,9 +21,6 @@ Arbol_nj <- ape::nj (Matriz_Distancias)
 plot (Arbol_nj)
 plot (Arbol_nj, "unrooted")
 
-Arbol_upgma <- phangorn::upgma (Matriz_Distancias)
-plot (Arbol_upgma)
-
 Matriz_Distancias2 <- seqinr::dist.alignment (
   msaConvert (alineamiento_2,"seqinr::alignment"))
 Matriz_Distancias2
@@ -32,17 +29,13 @@ Arbol_nj2 <- ape::nj (Matriz_Distancias2)
 plot (Arbol_nj2)
 plot (Arbol_nj2, "unrooted")
 
-Arbol_upgma2 <- phangorn::upgma (Matriz_Distancias2)
-plot (Arbol_upgma2)
 
 pdf ("Resultados/Arboles_globinas_ClustalW.pdf")
 plot (Arbol_nj)
-plot (Arbol_upgma)
 plot (Arbol_nj, "unrooted")
 dev.off()
 
 pdf ("Resultados/Arboles_globinas_ClustalOmega.pdf")
 plot (Arbol_nj2)
-plot (Arbol_upgma2)
 plot (Arbol_nj2, "unrooted")
 dev.off()
