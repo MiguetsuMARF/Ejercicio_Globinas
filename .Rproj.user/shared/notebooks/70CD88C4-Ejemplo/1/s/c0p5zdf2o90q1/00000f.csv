@@ -1,0 +1,10 @@
+"0","library(ggtree)"
+"0","ggtree(Arbol_nj_cox) + "
+"0","  geom_tiplab() + "
+"0","  geom_hilight(node=74, fill=""gold"") + "
+"0","  geom_hilight(node=48, fill=""purple"")+"
+"0","  geom_hilight(node=55, fill=""green"")"
+"1","[33m![39m The tree contained negative edge lengths. If you want to
+ignore the edges, you can set
+`options(ignore.negative.edge=TRUE)`, then re-run ggtree.
+"

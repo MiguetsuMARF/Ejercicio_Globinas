@@ -1,0 +1,53 @@
+---
+title: "Presentacion Ejercicio"
+author: "Miguel Angel Rodriguez Feregrino"
+date: "2024-11-06"
+output:
+  beamer_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Esta es mi presentacion en Rmarkdown
+
+Este es mi primer ejercicio para realizar una presentacion en R. Aqui voy a presentar algunos ejercicios que ya he realizado en clase.
+
+## Vamos a agregar una imagen 
+
+Vamos a agregar una imagen en linea como por ejemplo:
+
+![Imagen ejemplo del uso de ggtree](https://4va.github.io/biodatasci/r-ggtree_files/figure-html/msaplot-1.png)
+
+## Vamos a agregar la diapositiva con el codigo y resultado para mi propio arbol.
+```{r message=FALSE, warning=FALSE}
+library (ggmsa)
+library (Biostrings)
+library (msa)
+library(seqinr)
+library(ape)
+library(phangorn)
+
+cox1 <- readDNAStringSet("Raw_Data/COX1_Aedes.fas")
+alineamiento_cox_1 <- msa (cox1, method = "ClustalW")
+
+Matriz_Distancias_cox <- seqinr::dist.alignment (
+  msaConvert (alineamiento_cox_1,"seqinr::alignment"))
+
+Arbol_nj_cox <- ape::nj (Matriz_Distancias_cox)
+plot (Arbol_nj_cox)
+```
+## Ahora si vamos a agregar la grafica usando ggtree
+
+```{r message=FALSE, warning=FALSE}
+library(ggtree)
+ggtree(Arbol_nj_cox) + 
+  geom_tiplab() + 
+  geom_hilight(node=74, fill="gold") + 
+  geom_hilight(node=48, fill="purple")+
+  geom_hilight(node=55, fill="green")
+  theme_tree2()+ 
+  xlim(0, 0.6)
+```
